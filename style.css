@@ -13,11 +13,6 @@ body {
     box-sizing: border-box;
 }
 
-html,
-body {
-    overflow-x: hidden;
-}
-
 img {
     width: 100px;
     height: 100px;
@@ -62,6 +57,7 @@ h1 {
     body {
         flex-direction: column;
         height: auto;
+        overflow: hidden;
     }
 
     img {
