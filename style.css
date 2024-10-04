@@ -9,6 +9,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 img {
@@ -24,6 +26,10 @@ h1 {
 
 .container {
     text-align: center;
+    width: 60%;
+    max-width: 400px;
+    margin: 0 auto;
+    height: max-content;
 }
 
 .link {
@@ -44,4 +50,28 @@ h1 {
     /* Purple background on hover */
     color: #8be9fd;
     /* Blue text on hover */
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        height: auto;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .link {
+        padding: 10px;
+        margin: 5px 0;
+    }
 }
